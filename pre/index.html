@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./reset.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="dis_play">
+        <div class="game_start">
+          <h1>Game Start!</h1>
+        </div>
+      </div>
+      <div class="dis_play">
+        <div class="game_start">
+          <h1>코인을 넣으시오!</h1>
+        </div>
+      </div>
+      <div class="dis_play">
+        <div id="game_result">
+          <h1>이김!</h1>
+        </div>
+      </div>
+      <div class="dis_play">
+        <div id="game_result">
+          <h1>비김!</h1>
+        </div>
+      </div>
+      <div class="dis_play">
+        <div id="game_result">
+          <h1>너 없어!</h1>
+        </div>
+      </div>
+      <div class="wrap_box">
+        <div class="box_top">
+          <div class="box_top_frame"></div>
+        </div>
+        <div class="box_center">
+          <div class="box_center_moniter">
+            <div class="container_game">
+              <div class="container_game_roll">
+                <div class="container_game_roll_img">
+                  <img id="roll_img" src="" />
+                </div>
+                <div class="container_game_num">
+                  <div class="roll_num roll_num1">
+                    <h1>1</h1>
+                  </div>
+                  <div class="roll_num roll_num2">
+                    <h1>0</h1>
+                  </div>
+                  <div class="roll_num roll_num3">
+                    <h1>20</h1>
+                  </div>
+                  <div class="roll_num roll_num4">
+                    <h1>2</h1>
+                  </div>
+                  <div class="roll_num roll_num5">
+                    <h1>1</h1>
+                  </div>
+                  <div class="roll_num roll_num6">
+                    <h1>5</h1>
+                  </div>
+                  <div class="roll_num roll_num7">
+                    <h1>3</h1>
+                  </div>
+                  <div class="roll_num roll_num8">
+                    <h1>10</h1>
+                  </div>
+                  <div class="roll_num roll_num9">
+                    <h1>2</h1>
+                  </div>
+                  <div class="roll_num roll_num10">
+                    <h1>7</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container_coin">
+              <div class="container_coin_box">
+                <div draggable="true" class="coin coin_1">1</div>
+                <div draggable="true" class="coin coin_2">1</div>
+                <div draggable="true" class="coin coin_3">1</div>
+                <div draggable="true" class="coin_box">
+                  <div class="coin_in"></div>
+                </div>
+                <div class="coin_box_arrow"></div>
+                <div class="coin_box_text">
+                  <h2>코인</h2>
+                </div>
+              </div>
+              <div class="coin_count_text">
+                <h2>가능횟수 :</h2>
+                <h2 id="coin_count">0</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box_bottom">
+          <div class="box_bottom_btn">
+            <div class="btn_game">
+              <button id="rock_btn" class="_btn btn_rock">
+                <h1>바위</h1>
+              </button>
+            </div>
+            <div class="btn_game">
+              <button id="scissors_btn" class="_btn btn_scissors">
+                <h1>가위</h1>
+              </button>
+            </div>
+            <div class="btn_game">
+              <button id="paper_btn" class="_btn btn_paper"><h1>보</h1></button>
+            </div>
+            <div class="btn_game">
+              <button id="start_btn" class="_btn btn_start">
+                <h1 id="start_btn_h">시작</h1>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
